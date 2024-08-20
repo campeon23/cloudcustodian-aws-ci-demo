@@ -14,7 +14,7 @@ on:
 
 env:
 
-  AWS_REGION : "us-east-2" #Change to reflect your Region
+  AWS_REGION : "us-east-1" #Change to reflect your Region
 
 # Permission can be added at job level or workflow level
 permissions:
@@ -41,4 +41,4 @@ jobs:
         run: |
           custodian validate ./sample-policy.yml
           run: |
-            custodian run --region us-east-2 --verbose ./sample-policy.yml -s ./out-log/
+            custodian run --region us-east-1 --verbose ./sample-policy.yml -s ./out-log/
